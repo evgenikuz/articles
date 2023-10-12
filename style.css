@@ -1,0 +1,111 @@
+body{
+    background: #FBF8EC;
+}
+.content {
+    max-width: 1600px;
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+
+}
+h1 {
+    flex: 1 0 0;
+    color: #414141;
+    font-family: 'Rubik', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.grid-container {
+    display: grid;
+    height: 420px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+.article-pic {
+    flex: 1 0 0;
+    align-self: stretch;
+    object-position: cover;
+}
+.article-info {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+time {
+    align-self: stretch;
+    color: #8F8F8F;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.article-header {
+    align-self: stretch;
+    color:#414141;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.article-info {
+    align-self: stretch;
+    color: #414141;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.more-inactive {
+    display: flex;
+    width: 150px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: #E5FFDE;
+    border:0px;
+}
+.more-inactive-text {
+    color: #70C05B;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.more-active {
+    display: flex;
+    width: 150px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: #70C05B;
+    border:0px;
+}
+.more-active-text {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
