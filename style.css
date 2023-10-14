@@ -1,17 +1,21 @@
 body{
     background: #FBF8EC;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 .content {
     max-width: 1208px;
     width:100%;
-    margin: 0 auto;
 }
 h1 {
     color: #414141;
     font-family: 'Rubik', sans-serif;
     font-size: 36px;
     font-weight: 700;
-    margin:0 auto;
+    margin:0px auto;
+    margin-bottom: 40px;
 }
 .grid-container {
     display: grid;
@@ -24,9 +28,6 @@ h1 {
     max-width: 376px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex: 1 0 0;
-    align-self: stretch;
     border-radius: 4px;
     background: #FFF;
     box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
@@ -37,12 +38,13 @@ h1 {
     object-fit:cover
 }
 .article-info {
+    min-height: 235px;
     display: flex;
-    padding: 10px;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
     gap: 10px;
-    align-self: stretch;
+
 }
 time {
     align-self: stretch;
@@ -50,7 +52,6 @@ time {
     font-family: 'Rubik', sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 150%;
 }
 .article-header {
     align-self: stretch;
@@ -58,9 +59,9 @@ time {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 150%;
 }
-.article-info {
+.article-preview {
+    flex: 1;
     align-self: stretch;
     color: #414141;
     font-family: 'Rubik', sans-serif;
@@ -71,6 +72,7 @@ time {
 .more-inactive {
     display: flex;
     width: 150px;
+    height:40px;
     padding: 8px;
     justify-content: center;
     align-items: center;
@@ -85,11 +87,11 @@ time {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 150%;
 }
 .more-active {
     display: flex;
     width: 150px;
+    height:40px;
     padding: 8px;
     justify-content: center;
     align-items: center;
@@ -104,5 +106,14 @@ time {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 150%;
+}
+@media (min-width:801px) and (max-width:1208px) {
+    .grid-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:800px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }
